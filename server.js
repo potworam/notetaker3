@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(express.static("./develop/public"));
 
 app.get("/", function(req, res){
-    res.sendFile(path.join(__dirname, "./Develop/public/index.html"));
+    res.sendFile(path.join(__dirname, "./develop/public/index.html"));
 });
 
 app.get("/api/notes", function(req, res){
